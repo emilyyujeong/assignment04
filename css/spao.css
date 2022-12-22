@@ -158,10 +158,6 @@
     margin: auto 30px;
 }
 
-.mainContent ul>li.bold {
-    font-weight: 700;
-    color: #c41e20;
-}
 
 .mainContent .inner {
     width: 1200px;
@@ -177,9 +173,15 @@
     margin: 0 auto;
 }
 
+.mainContent .inner img:hover {
+    filter: brightness(1.2);
+}
+
 .mainContent figure {
     position: relative;
 }
+
+
 
 .mainContent figure::after {
     content: attr(data-txt);
@@ -189,7 +191,7 @@
 
     width: 40px;
     height: 40px;
-    background: tomato;
+    background: #e86434;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -197,20 +199,31 @@
 }
 
 
-/* 줄 바꿈 하지말고 넘어가면 ...되는거 하고싶은데ㅠ */
+
 .mainContent .inner .id {
-    font-size: 16px;
-    overflow: hidden;
+    width: 250PX;
+    display: block;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .mainContent .inner .pri {
     font-size: 20px;
 }
 
+
+.mainContent .inner i {
+    position: absolute;
+    right: 1px;
+    font-size: 25px;
+    top: 86%;
+}
+
+.mainContent .inner i:hover {
+    color: #c41e20;
+}
 
 
 
@@ -523,8 +536,9 @@
 /* footer 시작 */
 
 .footer {
-    padding: 100px 0;
+    padding: 50px 0;
     background: #f7f7f7;
+    font-size: 14px;
 }
 
 .footer .top {
@@ -532,16 +546,12 @@
     border-bottom: 1px solid #e5e5e5;
 }
 
-.footer .top>div {
-    flex: 1;
-}
 
 .footer .inner {
     display: flex;
     justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
-    flex: 1;
 }
 
 .bold {
@@ -562,15 +572,7 @@
 }
 
 .footer .top .cp {
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
     color: #909090;
-}
-
-.footer .top>div {
-    flex: 1;
 }
 
 .footer .top .sns {
@@ -585,26 +587,40 @@
     padding: 10px;
     border-radius: 50%;
     background: #ddd;
-
-
+    color: #606060;
 }
 
 .footer .top .right {
-
+    line-height: 10px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 40px);
+    color: #909090;
+    margin: 10px 0;
+    color: #606060;
 }
+
+.ps {
+    font-weight: 700;
+    
+}
+
+.footer .top .right li:hover {
+    font-weight: 500;
+}
+
 
 .footer .bottom {
     line-height: 80px;
+    color: #909090;
 }
 
 #f_link {
-    border: none;
+    border: 1px solid #ddd;
     outline: none;
-    padding: 5px 20px;
+    padding: 5px 10px;
     background: #fff;
-    border: 1px solid #333;
+    border: 1px solid #ddd;
 }
 
 #f_link option {
