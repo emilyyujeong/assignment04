@@ -20,7 +20,7 @@
 #header.on {
     line-height: 100px;
     background: #fff;
-    color: #333;
+    color: #1a1a1a;
 
 }
 
@@ -145,6 +145,7 @@
     font-weight: 700;
     margin: 0 0 50px 0;
     text-align: center;
+    color: #1a1a1a;
 
 }
 
@@ -243,10 +244,11 @@
 }
 
 .mainProduct h2 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
     margin: 0 0 50px 0;
     text-align: center;
+    color: #1a1a1a;
 }
 
 .mainProduct img {
@@ -386,10 +388,11 @@
 }
 
 .trend h2 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
     margin: 0 0 50px 0;
     text-align: center;
+    color: #1a1a1a;
 }
 
 
@@ -432,10 +435,11 @@
 
 
 .lookbook h2 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
     margin: 0 0 50px 0;
     text-align: center;
+    color: #1a1a1a;
 }
 
 .lookbook .inner {
@@ -602,7 +606,7 @@
 
 .ps {
     font-weight: 700;
-    
+
 }
 
 .footer .top .right li:hover {
